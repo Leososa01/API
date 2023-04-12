@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Form; //importante declarar la ruta que vamos a utilizar
+use GrahamCampbell\ResultType\Success;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -58,7 +59,7 @@ class ValidacionController extends Controller
 
             
 //desde aca 
-        return response()->json(['success'=>'se registro correctamente el fomulario y se envio el email']);
+        return response()->json(['se registro correctamente el fomulario y se envio el email']);
         //return va al final de todo, todo lo que va despues del return no se va a ejecutar
         //cuando ponemos enviar el formulario muestra un cartel
         //tambien se reinicia los campos
